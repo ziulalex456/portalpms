@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Meu Portal</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+        
+    </header>
+    <div class="faixa">
+        Studio Pricila Moreira - Treinamentos
+    </div>
+    <div class="portal">
+        <div class="menu">
+            <div>
+                <button onclick="treinamentos1()">DIA 1</button>
+            </div>
+            <div>
+                <button onclick="treimentos2()">DIA 2</button>
+            </div>
+            <div>
+                <button onclick="treimentos3()">DIA 3</button>
+            </div>
+            <div>
+                <button onclick="treimentos4()">DIA 4</button>
+            </div>
+            <div>
+                <button onclick="treimentos5()">DIA 5</button>
+            </div>
+            
+        </div>
+        <div class="area" id="resultado">
+
+        </div>
+            
+    </div>
+    <script>
+        function treinamentos1(){
+            document.getElementById("resultado").innerHTML =
+            `<h2>D I A  1</h2><br><br>
+            <table border="1px" cellspacing="5px">
+                <tr>
+                    <th>INICIAL</th>
+                    <th>INTERMEDIÁRIO</th>
+                    <th>AVANÇADO</th>
+                    <th>PESADO</th>
+                </tr>
+                <tr>
+                    <td>TRX - Puxada no peito [3 x 10]</td>
+                    <td>Pull Face - Puxada com a corda [3 x 10]</td>
+                    <td>Pull Face - Puxada com a corda [3 x 10]</td>
+                    <td>Pull Face - Puxada com a corda [3 x 10]</td>
+                </tr>
+                <tr>
+                    <td>TRX - Puxada alta [3 x 10]</td>
+                    <td>Puxada com a barra - pegada invertida</td>
+                    <td>Puxada com a barra - pegada invertida</td>
+                    <td>Puxada com a barra - pegada invertida</td>
+                </tr>
+                <tr>
+                    <td>Remada na polia - triângulo [3 x 10]</td>
+                    <td>Remada na polia - triângulo</td>
+                    <td>Remada na polia - unilateral</td>
+                    <td>Remada na polia - unilateral</td>
+                </tr>
+                <tr>    
+                    <td>Elevação lateral com halter [3 x 10]</td>
+                    <td>Elevação lateral com halter</td>
+                    <td>Elevação lateral com halter</td>
+                    <td>Elevação lateral com halter</td>
+                </tr>
+                <tr>    
+                    <td>Tríceps com a corda [3 x 10]</td>
+                    <td>Tríceps com a corda</td>
+                    <td>Tríceps com a corda - unilateral</td>
+                    <td>Elevação frontal com halter</td>
+                </tr>
+                <tr>    
+                    <td>Prancha cotovelo apoiado [3 x 10s]</td>
+                    <td>Prancha cotovelo apoiado</td>
+                    <td>Tríceps com halter na testa</td>
+                    <td>Tríceps com halter - unilateral</td>
+                </tr>
+                <tr>    
+                    <td> - </td>
+                    <td> - </td>
+                    <td>Tríceps na poila - barra pequena</td>
+                    <td>Tríceps na poila - barra pequena</td>
+                </tr>
+                <tr>    
+                    <td> - </td>
+                    <td> - </td>
+                    <td>Prancha braço estendido</td>
+                    <td>Tríceps invertido na poila - barra pequena</td>
+                </tr>
+                <tr>    
+                    <td> - </td>
+                    <td> - </td>
+                    <td> - </td>
+                    <td>Prancha braço estendido</td>
+                </tr>
+                
+             </table>               
+                
+                
+                `;
+        }
+
+        function abrircosta(){
+            const imagens = ["img/costa1.gif", "img/costa2.gif", "img/costa3.gif", "img/costa4.gif"];
+            document.getElementById("resultado").innerHTML = `<h2>COSTA</h2> ${imagens.map(src => `<img src="${src}" width="100">`).join("")}`;
+        }
+
+        function abrirperna(){
+            const imagens = ["img/perna1.gif", "img/perna2.gif", "img/perna3.gif", "img/perna4.gif"];
+            document.getElementById("resultado").innerHTML = `<h2>PERNA</h2> ${imagens.map(src => `<img src="${src}" width="100">`).join("")}`;
+        }
+
+        function abrirbraco(){
+            const imagens = ["img/braco1.gif", "img/braco2.gif", "img/braco3.gif", "img/braco4.gif"];
+            document.getElementById("resultado").innerHTML = `<h2>BRAÇO</h2> ${imagens.map(src => `<img src="${src}" width="100">`).join("")}`;
+        }
+
+        function abrirombro(){
+            const imagens = ["img/ombro1.gif", "img/ombro2.gif", "img/ombro3.gif", "img/ombro4.gif"];
+            document.getElementById("resultado").innerHTML = `<h2>OMBRO</h2> ${imagens.map(src => `<img src="${src}" width="100">`).join("")}`;
+        }
+
+    </script>
+  
+
+</body>
+</html>
